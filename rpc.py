@@ -75,6 +75,8 @@
 # AI version
 import random
 
+player = input("Player1, make your move: ").lower()
+
 rand_num = random.randint(0,2)
 if rand_num == 0:
 	computer = "rock"
@@ -82,10 +84,7 @@ elif rand_num == 1:
 	computer = "paper"
 else:
 	computer = "scissors"
-print(computer)
-
-player = input("Player1, make your move: ")
-
+print(f"Computer playes {computer}")
 
 if player == computer:
 	print("Its a tie!")
