@@ -73,11 +73,11 @@
 #	print("player2 wins!")
 
 # AI version
-import random
+from random import random
 
-player = input("Player1, make your move: ").lower()
+player = input("Player, make your move: ").lower()
 
-rand_num = random.randint(0,2)
+rand_num = randint(0,2)
 if rand_num == 0:
 	computer = "rock"
 elif rand_num == 1:
@@ -91,6 +91,7 @@ if player == computer:
 elif player == "rock":
 	if computer == "scissors":
 		print("player wins!")
+	# you can stay implicit or you can use else
 	elif computer == "paper":
 		print("computer wins!")
 elif player == "paper":
@@ -104,4 +105,4 @@ elif player == "scissors":
 	elif computer == "rock":
 	 	print("computer wins!")
 else:
-	print("something went wrong")
+	print("Enter a valid answer")
